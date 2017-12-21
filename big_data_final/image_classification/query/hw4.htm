@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-us"><head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+<title>HW</title><link rel="stylesheet" type="text/css" href="../style.css"></head>
+<body>
+
+<h1>COMS4111-03, Fall 2017</h1><h1>Homework 4</h1>
+
+<ul>
+  <li>Due date: Wednesday December 13, 5pm. <span style="color: rgb(204, 0, 0); font-weight: bold;">You cannot use grace days for this homework</span>.</li>
+</ul><br><span style="font-weight: bold; text-decoration: underline;">Problem 1 (5 points)</span>
+  <br><br><br>Consider a database of two items A and B. Initial values are A
+    = B = 0 and the consistency requirement is A = 0 or B = 0. Transactions T1
+    and T2 are coded as follows, where a and b are local variables:<br><br>T1: {a=R(A); b=R(B); if (a==0) {W(B, b+1);}}<br>T2: {b=R(B); a=R(A); if (b==0) {W(A, a+1);}}<br><br><ol><li>Show that these transactions are correct by showing that every serial
+    execution involving these two transactions preserves the consistency of the
+    database.</li><li>Show a concurrent execution of T1 and T2 which produces a non
+    serializable execution.</li><li>Is it possible that T1 and T2 would run concurrently under Strict 2PL?
+    If yes, show such a schedule; if no, explain why not.
+    &nbsp;&nbsp;</li></ol><br><br style="font-weight: bold; text-decoration: underline;"><span style="font-weight: bold; text-decoration: underline;">Problem 2 (5 points)</span><br><br>Assume the schedule <i><br><br>S</i>: W4(y) R1(x) R1(w) W1(w) W2(x) C2 W3(w) C3 W4(w) C4 W1(z) C1<br>Where Rn(x)/Wn(x) indicates transaction Tn reads/writes data item x, and Cn
+    indicates Tn commits.<br><br><ol><li>Show the precedence graph of S.</li><li>Prove S is correct, i.e.,
+    serializable.</li><li>Enumerate all serial schedules that are equivalent
+    to S.&nbsp;
+  </li></ol><ol></ol>
+    <p align="left">&nbsp;
+
+</p></body></html>
